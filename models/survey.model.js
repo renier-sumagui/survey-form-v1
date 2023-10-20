@@ -1,6 +1,7 @@
 const Mysql                 = require('mysql');
 const Model 				= require('./model');
 const Constants 			= require('../config/constants');
+const Crypto				= require('crypto');
 
 class SurveyModel extends Model {
 	constructor() {
@@ -46,7 +47,8 @@ class SurveyModel extends Model {
 
 	// supply the logic for each function:
 	generateCaptcha(){
-		return ""; 
+		this.captcha =  crypto.randomBytes(20).toString('hex');
+		return this.captcha; 
 	}
 
 	verifyCaptchaInput(input){
