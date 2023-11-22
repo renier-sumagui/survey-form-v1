@@ -32,5 +32,9 @@ class SurveyController extends Controller {
         await SurveyModel.createSurvey(req.body.name, req.body.dojo_location, req.body.fave_lang, req.body.comment);
         res.redirect("/success");
     }
+
+    testSurveyController() {
+        return "Test survey controller";
+    }
 }
 module.exports = SurveyController;
