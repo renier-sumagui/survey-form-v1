@@ -34,7 +34,7 @@ class SurveyController extends Controller {
     }
 
     tests() {
-        return "Tests";
+        return "Test";
     }
 }
 module.exports = SurveyController;
