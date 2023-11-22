@@ -33,7 +33,7 @@ class SurveyController extends Controller {
         res.redirect("/success");
     }
 
-    test() {
+    tests() {
         return "Test";
     }
 }
