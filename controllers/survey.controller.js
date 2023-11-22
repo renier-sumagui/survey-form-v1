@@ -33,8 +33,8 @@ class SurveyController extends Controller {
         res.redirect("/success");
     }
 
-    testSurveyController() {
-        return "Test survey controller";
+    test() {
+        return "Test";
     }
 }
 module.exports = SurveyController;
